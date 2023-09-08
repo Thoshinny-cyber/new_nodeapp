@@ -1,0 +1,24 @@
+{
+  "login": [
+    {
+      "email": "gsruthisuresh@gmail.com",
+      "mailpassword": "stockatlas@123",
+      "id": 1
+    },
+    {
+      "email": "hello@gmail.com",
+      "mailpassword": "hello@123",
+      "id": 2
+    },
+    {
+      "email": "hello@gmail.com",
+      "mailpassword": "hello@123",
+      "id": 3
+    },
+    {
+      "email": "riduvarshini.s.r@gmail.com",
+      "mailpassword": "Ridu@2001",
+      "id": 4
+    }
+  ]
+}
