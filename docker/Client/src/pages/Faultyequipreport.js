@@ -65,7 +65,7 @@ const Faultyequip = () => {
                 student_id:data.student_id,
                 amount:data.amount
             };
-            axios.post("http://localhost:3001/reports/", userData).then((response) => {
+            axios.post("http://15.206.209.5:3001/reports/", userData).then((response) => {
               console.log(response.status, response.data.token);
             });
           };
@@ -176,7 +176,7 @@ const Faultyequip = () => {
                                 </div>
                             </div>
                             <div className="flex justify-center p-5 text-white">
-                                <Link to='/faultyeqrev'><button className="px-5 bg-buttonblue rounded-md py-1" type="submit">SUBMIT</button></Link>
+                                <button className="px-5 bg-buttonblue rounded-md py-1" type="submit">SUBMIT</button>
                             </div>
                         </form>
                     </div>

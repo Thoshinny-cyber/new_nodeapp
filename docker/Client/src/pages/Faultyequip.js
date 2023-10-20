@@ -95,7 +95,7 @@ const Faultyequip = () => {
                 student_id:data.student_id,
                 amount:data.amount
             };
-            axios.post("http://localhost:3001/reports/", userData).then((response) => {
+            axios.post("http://13.233.253.123:3001/reports/", userData).then((response) => {
               console.log(response.status, response.data.token);
             });
           };

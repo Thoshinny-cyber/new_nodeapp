@@ -2,7 +2,7 @@ import {Login} from './pages/Login'
 import { Home } from './pages/Home';
 import Rooms from './pages/Rooms'
 import Assets from './pages/Assets'
-import Faultyequip from './pages/Faultyequipreport';
+import Faultyequip from './pages/Faultyequip';
 import { Navbar } from './components/Navbar';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import AssetsTable from './pages/AssetsTable';
@@ -19,6 +19,7 @@ import LendAsset from './pages/Lendasset';
 import Lendcart from './pages/Lendcart';
 import Returnasset from './pages/Returnasset';
 import Studentdbtable from './pages/Studentdbtable';
+import AssetsTable from './pages/AssetsTable';
 
 function App() {
   return (
@@ -50,6 +51,8 @@ function App() {
         <Editassetmod /></>} />
         <Route path="assetstablemod" element={<><Navbar />
         <Assetstablemod /></>} />
+	<Route path="assetstable" element={<><Navbar />
+        <AssetsTable /></>} />
         <Route path="faultyeqre" element={<><Navbar />
         <Faultyequip /></>} />
         <Route path="faultyeqrev" element={<><Navbar />
