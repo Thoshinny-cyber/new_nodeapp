@@ -19,7 +19,7 @@ import LendAsset from './pages/Lendasset';
 import Lendcart from './pages/Lendcart';
 import Returnasset from './pages/Returnasset';
 import Studentdbtable from './pages/Studentdbtable';
-import AssetsTable from './pages/AssetsTable';
+//import AssetsTable from './pages/AssetsTable';
 
 function App() {
   return (

@@ -18,7 +18,7 @@ const AssetsTable = () => {
     });
     const [apiData, setApiData] = useState([]);
     useEffect(() => {
-        axios.get(`http://65.0.108.227:3001/assets`)
+        axios.get(`http://13.233.155.94:3001/assets`)
             .then((getData) => {
                 setApiData(getData.data);
                 console.log(apiData);
@@ -65,7 +65,7 @@ const AssetsTable = () => {
             asset_name:data.asset_name,
         };
         console.log(id)
-        axios.patch(`http://65.0.108.227:3001/assets/${id}`, userData).then((response) => {
+        axios.patch(`http://13.233.155.94:3001/assets/${id}`, userData).then((response) => {
           console.log(response.status, response.data.token);
         });
         setData({
@@ -75,7 +75,7 @@ const AssetsTable = () => {
         forceUpdate()
       };
       const deleteRow = (id)=>{  
-        axios.delete(`http://65.0.108.227:3001/assets/${id}`)  
+        axios.delete(`http://13.233.155.94:3001/assets/${id}`)  
           .then(res => {  
             console.log(res);  
             console.log(res.data);  

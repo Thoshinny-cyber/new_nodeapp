@@ -8,8 +8,6 @@ services:
       - "3000:3000"
     depends_on:
       - backend
-    networks:
-      - mern-network
 
   backend:
     build:
@@ -19,24 +17,14 @@ services:
       - "3001:3001"
     depends_on:
       - mongodb
-    networks:
-      - mern-network
 
   mongodb:
     image: mongo
     container_name: mongo-db
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: Thoshinny
-      MONGO_INITDB_ROOT_PASSWORD: Hamyeong*4
     volumes:
       - mongo-data:/data/db
     ports:
       - "27017:27017"
-    networks:
-      - mern-network
 
-networks:
-  mern-network:
-    driver: bridge
 volumes:
   mongo-data:
